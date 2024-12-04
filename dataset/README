@@ -25,4 +25,9 @@ drought_county_tx.csv:
     County = County name
     FIPS = Federal Information Processing Standards code that uniquely identifies counties within the USA
     MapDate = Date of the drought data in format yyyymmdd
-    DSCI = Drought Severity and Coverage Index (DSCI) is a measure of drought intensity and spatial coverage. 
+    DSCI = Drought Severity and Coverage Index (DSCI) is a measure of drought intensity and spatial coverage.
+
+drought_state_tx.csv:
+    Name = Always "Texas"
+    MapDate = Date of the drought data in format yyyymmdd
+    DSCI = Drought Severity and Coverage Index (DSCI) is a measure of drought intensity and spatial coverage.
