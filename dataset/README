@@ -18,3 +18,4 @@ texas_fires.csv
     "CONT_DATE", CONT_DATE = Date on which the fire was declared contained or otherwise controlled (mm/dd/yyyy where mm=month, dd=day, and yyyy=year).
     "CONT_DOY", CONT_DOY = Day of year on which the fire was declared contained or otherwise controlled.
     "CONT_TIME", CONT_TIME = Time of day that the fire was declared contained or otherwise controlled (hhmm where hh=hour, mm=minutes).
+    "DISCOVERY_DATE_NEW", DISCOVERY_DATE_NEW = Date on yyyy-mm-dd format.
