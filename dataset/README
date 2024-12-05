@@ -21,8 +21,40 @@ texas_fires.csv
     DISCOVERY_DATE_NEW = Date on yyyy-mm-dd format.
 
 drought_county_tx.csv:
+    from https://droughtmonitor.unl.edu/DmData/DataDownload/DSCI.aspx
+
     State = Always "TX"
     County = County name
     FIPS = Federal Information Processing Standards code that uniquely identifies counties within the USA
     MapDate = Date of the drought data in format yyyymmdd
-    DSCI = Drought Severity and Coverage Index (DSCI) is a measure of drought intensity and spatial coverage. 
+    DSCI = Drought Severity and Coverage Index (DSCI) is a measure of drought intensity and spatial coverage.
+
+drought_state_tx.csv:
+    from https://droughtmonitor.unl.edu/DmData/DataDownload/DSCI.aspx
+
+    Name = Always "Texas"
+    MapDate = Date of the drought data in format yyyymmdd
+    DSCI = Drought Severity and Coverage Index (DSCI) is a measure of drought intensity and spatial coverage.
+
+texas_fires_with_fips.csv
+    Original dataset used to create this subset:
+    https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires?resource=download
+
+    Column discriptions:
+
+    FOD_ID = Global unique identifier.
+    FIRE_SIZE = Estimate of acres within the final perimeter of the fire.
+    FIRE_SIZE_CLASS = Code for fire size based on the number of acres within the final fire perimeter expenditures (A=greater than 0 but less than or equal to 0.25 acres, B=0.26-9.9 acres, C=10.0-99.9 acres, D=100-299 acres, E=300 to 999 acres, F=1000 to 4999 acres, and G=5000+ acres).
+    LATITUDE = Latitude (NAD83) for point location of the fire (decimal degrees).
+    LONGITUDE = Longitude (NAD83) for point location of the fire (decimal degrees).
+    FIRE_YEAR = Calendar year in which the fire was discovered or confirmed to exist.
+    DISCOVERY_DATE = Date on which the fire was discovered or confirmed to exist.
+    DISCOVERY_DOY = Day of year on which the fire was discovered or confirmed to exist.
+    DISCOVERY_TIME = Time of day that the fire was discovered or confirmed to exist.
+    County, or equivalent, in which the fire burned (or originated), based on nominal designation in the fire report.
+    STAT_CAUSE_DESCR = Description of the (statistical) cause of the fire.
+    CONT_DATE = Date on which the fire was declared contained or otherwise controlled (mm/dd/yyyy where mm=month, dd=day, and yyyy=year).
+    CONT_DOY = Day of year on which the fire was declared contained or otherwise controlled.
+    CONT_TIME = Time of day that the fire was declared contained or otherwise controlled (hhmm where hh=hour, mm=minutes).
+    DISCOVERY_DATE_NEW = Date on yyyy-mm-dd format.
+    FIPS = Federal Information Processing Standards code that uniquely identifies counties within the USA
