@@ -36,7 +36,7 @@ drought_state_tx.csv:
     MapDate = Date of the drought data in format yyyymmdd
     DSCI = Drought Severity and Coverage Index (DSCI) is a measure of drought intensity and spatial coverage.
 
-    texas_fires.csv
+texas_fires_with_fips.csv
     Original dataset used to create this subset:
     https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires?resource=download
 
