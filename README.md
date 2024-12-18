@@ -88,6 +88,6 @@ Make sure you have the following installed to run the analysis scripts:
 - Required libraries:
   ```bash
   pip install pandas numpy matplotlib
-  pip install seabase
+  pip install seaborn
   pip install scipy
   pip install matplotlib
