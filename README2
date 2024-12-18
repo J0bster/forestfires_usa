@@ -82,6 +82,19 @@ This repository contains datasets and scripts for analyzing wildfires and drough
 - `DISCOVERY_DATE_NEW`: Date in `YYYY-MM-DD` format.
 - `FIPS`: Federal Information Processing Standards code that uniquely identifies counties in the USA.
 
+---
+
+## Adding New Datasets
+To add a new dataset:
+1. Place the dataset in the appropriate folder in the repository.
+2. Update the `README.md` file with:
+   - The dataset name.
+   - The source of the dataset.
+   - A brief description of the dataset.
+   - Column descriptions, including data types and possible values.
+
+---
+
 ## Requirements
 Make sure you have the following installed to run the analysis scripts:
 - Python 3.x
