@@ -9,20 +9,20 @@ This repository contains datasets and scripts for analyzing wildfires and drough
 ## Datasets
 
 ### 1. `texas_fires.csv`
-**Source**: [188 Million US Wildfires on Kaggle](https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires?resource=download)  
-**Description**: Contains details about wildfires in Texas.  
+**Source**: [188 Million US Wildfires on Kaggle](https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires?resource=download)
+**Description**: Contains details about wildfires in Texas.
 
 **Columns**:
 - `FOD_ID`: Global unique identifier.
 - `FIRE_SIZE`: Estimate of acres within the final perimeter of the fire.
 - `FIRE_SIZE_CLASS`: Code for fire size based on acres:
-  - **A**: > 0 but ≤ 0.25 acres  
-  - **B**: 0.26 - 9.9 acres  
-  - **C**: 10.0 - 99.9 acres  
-  - **D**: 100 - 299 acres  
-  - **E**: 300 - 999 acres  
-  - **F**: 1000 - 4999 acres  
-  - **G**: 5000+ acres  
+  - **A**: > 0 but ≤ 0.25 acres
+  - **B**: 0.26 - 9.9 acres
+  - **C**: 10.0 - 99.9 acres
+  - **D**: 100 - 299 acres
+  - **E**: 300 - 999 acres
+  - **F**: 1000 - 4999 acres
+  - **G**: 5000+ acres
 - `LATITUDE` / `LONGITUDE`: Latitude/Longitude (NAD83) for the fire's location (decimal degrees).
 - `FIRE_YEAR`: Calendar year when the fire was discovered.
 - `DISCOVERY_DATE`: Date when the fire was discovered or confirmed to exist.
@@ -38,7 +38,7 @@ This repository contains datasets and scripts for analyzing wildfires and drough
 ---
 
 ### 2. `drought_county_tx.csv`
-**Source**: [US Drought Monitor - County Data](https://droughtmonitor.unl.edu/DmData/DataDownload/DSCI.aspx)  
+**Source**: [US Drought Monitor - County Data](https://droughtmonitor.unl.edu/DmData/DataDownload/DSCI.aspx)
 **Description**: Contains drought severity data at the county level for Texas.
 
 **Columns**:
@@ -51,7 +51,7 @@ This repository contains datasets and scripts for analyzing wildfires and drough
 ---
 
 ### 3. `drought_state_tx.csv`
-**Source**: [US Drought Monitor - State Data](https://droughtmonitor.unl.edu/DmData/DataDownload/DSCI.aspx)  
+**Source**: [US Drought Monitor - State Data](https://droughtmonitor.unl.edu/DmData/DataDownload/DSCI.aspx)
 **Description**: Contains drought severity data at the state level for Texas.
 
 **Columns**:
@@ -62,7 +62,7 @@ This repository contains datasets and scripts for analyzing wildfires and drough
 ---
 
 ### 4. `texas_fires_with_fips.csv`
-**Source**: [188 Million US Wildfires on Kaggle](https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires?resource=download)  
+**Source**: [188 Million US Wildfires on Kaggle](https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires?resource=download)
 **Description**: Similar to `texas_fires.csv` but includes county-level `FIPS` codes.
 
 **Columns**:
@@ -91,3 +91,16 @@ Make sure you have the following installed to run the analysis scripts:
   pip install seaborn
   pip install scipy
   pip install matplotlib
+  ```
+
+Make sure you have the following installed to run the map visualization:
+- Required libraries:
+  ```
+  pip install folium
+  pip install geopandas
+  pip install branca
+  pip install esda
+  pip install libpysal
+  ```
+
+To run the maps.py you also need a Geojson shape file of the county boundaries of Texas. You can download it from [here](https://gis-txdot.opendata.arcgis.com/datasets/TXDOT::texas-county-boundaries-detailed/explore?location=30.834886%2C-100.077018%2C6.22). The file needs to be placed in the dataset_gitignore folder with the name County_shape.geojson.
